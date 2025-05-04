@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.pvz.HelloController">
+    <center>
+        <StackPane prefHeight="637.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane fx:id="idLevel" prefHeight="200.0" prefWidth="200.0" visible="false">
+                    <children>
+                        <ImageView fitHeight="802.0" fitWidth="1208.0" layoutX="9.0" layoutY="-148.0">
+                            <image>
+                                <Image url="@../../images/Interface/level.jpg" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="315.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#click1" prefHeight="190.0" prefWidth="190.0" text="Level_1">
+                            <font>
+                                <Font name="System Bold" size="40.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="643.0" layoutY="159.0" mnemonicParsing="false" prefHeight="190.0" prefWidth="314.0" text="Coming_Soon">
+                            <font>
+                                <Font name="System Bold" size="40.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="106.0" fitWidth="263.0" layoutX="456.0" layoutY="422.0">
+                            <image>
+                                <Image url="@../../images/Interface/retourner.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="514.0" layoutY="435.0" onMouseClicked="#clickRetourAccueil" text="Retour">
+                            <font>
+                                <Font name="System Bold" size="50.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="idAccueil" prefHeight="200.0" prefWidth="200.0" visible="false">
+                    <children>
+                        <ImageView fitHeight="807.0" fitWidth="1219.0" layoutX="-4.0" layoutY="-152.0">
+                            <image>
+                                <Image url="@../../images/Interface/accueil.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="110.0" fitWidth="340.0" layoutX="441.0" layoutY="346.0">
+                            <image>
+                                <Image url="@../../images/Interface/menu/button.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="492.0" layoutY="346.0" onMouseClicked="#clickStart" text="START" textFill="#86fac2">
+                            <font>
+                                <Font name="System Bold Italic" size="80.0" />
+                            </font>
+                        </Label>
+                    </children></AnchorPane>
+                <AnchorPane fx:id="idTerrain" prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="801.0" fitWidth="1202.0" layoutX="7.0" layoutY="-149.0">
+                            <image>
+                                <Image url="@../../images/terrain/Background.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="129.0" fitWidth="949.0" layoutX="119.0" layoutY="207.0">
+                            <image>
+                                <Image url="@../../images/terrain/Background_0.jpg" />
+                            </image>
+                        </ImageView>
+                        <ImageView layoutX="237.0" layoutY="345.0">
+                            <image>
+                                <Image url="@../../images/Interface/soleil.gif" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="idSun" layoutX="551.0" layoutY="50.0" onMouseClicked="#clickSun">
+                            <image>
+                                <Image url="@../../images/Interface/soleil.gif" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="peashooter1" layoutX="142.0" layoutY="224.0">
+                            <image>
+                                <Image url="@../../images/plantes/peashooter/peashooter.gif" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="sunflower1" layoutX="137.0" layoutY="229.0">
+                            <image>
+                                <Image url="@../../images/plantes/sunflower/sunflower.gif" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="wallnut1" layoutX="141.0" layoutY="230.0">
+                            <image>
+                                <Image url="@../../images/plantes/wallnut/wallnut.gif" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="cadre3" layoutX="337.0" layoutY="224.0" onMouseClicked="#clickCadre3">
+                            <image>
+                                <Image url="@../../images/Interface/menu/Select.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="cadre1" layoutX="142.0" layoutY="233.0" onMouseClicked="#clickCadre1">
+                            <image>
+                                <Image url="@../../images/Interface/menu/Select.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="cadre2" layoutX="233.0" layoutY="229.0" onMouseClicked="#clickCadre2">
+                            <image>
+                                <Image url="@../../images/Interface/menu/Select.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="cadre5" layoutX="554.0" layoutY="237.0" onMouseClicked="#clickCadre5">
+                            <image>
+                                <Image url="@../../images/Interface/menu/Select.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="cadre4" layoutX="449.0" layoutY="236.0" onMouseClicked="#clickCadre4">
+                            <image>
+                                <Image url="@../../images/Interface/menu/Select.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="cadre6" layoutX="657.0" layoutY="231.0" onMouseClicked="#clickCadre6">
+                            <image>
+                                <Image url="@../../images/Interface/menu/Select.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="cadre7" layoutX="742.0" layoutY="228.0" onMouseClicked="#clickCadre7">
+                            <image>
+                                <Image url="@../../images/Interface/menu/Select.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="cadre8" layoutX="841.0" layoutY="235.0" onMouseClicked="#clickCadre8">
+                            <image>
+                                <Image url="@../../images/Interface/menu/Select.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="cadre9" layoutX="948.0" layoutY="239.0" onMouseClicked="#clickCadre9">
+                            <image>
+                                <Image url="@../../images/Interface/menu/Select.png" />
+                            </image>
+                        </ImageView>
+                  <ImageView fx:id="sunflower2" layoutX="230.0" layoutY="233.0">
+                     <image>
+                        <Image url="@../../images/plantes/sunflower/sunflower.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="sunflower3" layoutX="339.0" layoutY="233.0">
+                     <image>
+                        <Image url="@../../images/plantes/sunflower/sunflower.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="sunflower4" layoutX="455.0" layoutY="235.0">
+                     <image>
+                        <Image url="@../../images/plantes/sunflower/sunflower.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="sunflower5" layoutX="545.0" layoutY="235.0">
+                     <image>
+                        <Image url="@../../images/plantes/sunflower/sunflower.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="sunflower6" layoutX="647.0" layoutY="231.0">
+                     <image>
+                        <Image url="@../../images/plantes/sunflower/sunflower.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="sunflower7" layoutX="742.0" layoutY="235.0">
+                     <image>
+                        <Image url="@../../images/plantes/sunflower/sunflower.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="sunflower8" layoutX="841.0" layoutY="234.0">
+                     <image>
+                        <Image url="@../../images/plantes/sunflower/sunflower.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="sunflower9" layoutX="947.0" layoutY="232.0">
+                     <image>
+                        <Image url="@../../images/plantes/sunflower/sunflower.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="peashooter2" layoutX="230.0" layoutY="226.0">
+                     <image>
+                        <Image url="@../../images/plantes/peashooter/peashooter.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="peashooter9" layoutX="949.0" layoutY="232.0">
+                     <image>
+                        <Image url="@../../images/plantes/peashooter/peashooter.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="peashooter6" layoutX="649.0" layoutY="222.0">
+                     <image>
+                        <Image url="@../../images/plantes/peashooter/peashooter.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="peashooter5" layoutX="553.0" layoutY="223.0">
+                     <image>
+                        <Image url="@../../images/plantes/peashooter/peashooter.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="peashooter4" layoutX="460.0" layoutY="225.0">
+                     <image>
+                        <Image url="@../../images/plantes/peashooter/peashooter.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="peashooter3" layoutX="336.0" layoutY="227.0">
+                     <image>
+                        <Image url="@../../images/plantes/peashooter/peashooter.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="peashooter8" layoutX="835.0" layoutY="230.0">
+                     <image>
+                        <Image url="@../../images/plantes/peashooter/peashooter.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="peashooter7" layoutX="742.0" layoutY="227.0">
+                     <image>
+                        <Image url="@../../images/plantes/peashooter/peashooter.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="wallnut2" layoutX="242.0" layoutY="231.0">
+                     <image>
+                        <Image url="@../../images/plantes/wallnut/wallnut.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="wallnut3" layoutX="346.0" layoutY="223.0">
+                     <image>
+                        <Image url="@../../images/plantes/wallnut/wallnut.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="wallnut4" layoutX="459.0" layoutY="233.0">
+                     <image>
+                        <Image url="@../../images/plantes/wallnut/wallnut.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="wallnut5" layoutX="555.0" layoutY="233.0">
+                     <image>
+                        <Image url="@../../images/plantes/wallnut/wallnut.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="wallnut6" layoutX="656.0" layoutY="231.0">
+                     <image>
+                        <Image url="@../../images/plantes/wallnut/wallnut.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="wallnut7" layoutX="745.0" layoutY="229.0">
+                     <image>
+                        <Image url="@../../images/plantes/wallnut/wallnut.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="wallnut8" layoutX="844.0" layoutY="236.0">
+                     <image>
+                        <Image url="@../../images/plantes/wallnut/wallnut.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="wallnut9" layoutX="947.0" layoutY="232.0">
+                     <image>
+                        <Image url="@../../images/plantes/wallnut/wallnut.gif" />
+                     </image>
+                  </ImageView>
+                    </children></AnchorPane>
+            </children>
+        </StackPane>
+    </center>
+    <top>
+        <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane fx:id="idMenu" prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="138.0" fitWidth="827.0" layoutX="-91.0" layoutY="5.0">
+                            <image>
+                                <Image url="@../../images/Interface/menu/shop.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="99.0" fitWidth="214.0" layoutX="957.0" layoutY="11.0">
+                            <image>
+                                <Image url="@../../images/Interface/retourner.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="1001.0" layoutY="25.0" onMouseClicked="#clickRetourLevel" text="Retour">
+                            <font>
+                                <Font name="System Bold" size="50.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="idSunCount" layoutX="50.0" layoutY="101.0" text="0">
+                            <font>
+                                <Font name="System Bold" size="25.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="131.0" fitWidth="130.0" layoutX="143.0" layoutY="3.0">
+                            <image>
+                                <Image url="@../../images/Interface/menu/suncost.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="131.0" fitWidth="130.0" layoutX="269.0" layoutY="2.0">
+                            <image>
+                                <Image url="@../../images/Interface/menu/suncost.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="131.0" fitWidth="130.0" layoutX="397.0" layoutY="2.0">
+                            <image>
+                                <Image url="@../../images/Interface/menu/suncost.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="205.0" layoutY="87.0" text="50">
+                            <font>
+                                <Font name="System Bold" size="25.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="451.0" layoutY="87.0" text="50">
+                            <font>
+                                <Font name="System Bold" size="25.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="325.0" layoutY="86.0" text="100">
+                            <font>
+                                <Font name="System Bold" size="25.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="66.0" fitWidth="82.0" layoutX="168.0" layoutY="13.0" onMouseClicked="#clickSunflower">
+                            <image>
+                                <Image url="@../../images/plantes/sunflower/SunFlower_0.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="67.0" fitWidth="84.0" layoutX="420.0" layoutY="11.0" onMouseClicked="#clickWallnut">
+                            <image>
+                                <Image url="@../../images/plantes/wallnut/WallNut_0.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="67.0" fitWidth="84.0" layoutX="292.0" layoutY="11.0" onMouseClicked="#clickPeashooter">
+                            <image>
+                                <Image url="@../../images/plantes/peashooter/Peashooter_0.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="idClose" fitHeight="100.0" fitWidth="100.0" layoutX="665.0" layoutY="24.0" onMouseClicked="#clickClose">
+                            <image>
+                                <Image url="@../../images/Interface/close.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="idlevel1" prefHeight="200.0" prefWidth="200.0" visible="false">
+                    <children>
+                        <Label layoutX="534.0" layoutY="36.0" text="Level">
+                            <font>
+                                <Font name="System Bold Italic" size="50.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </children>
+        </StackPane>
+    </top>
+</BorderPane>
