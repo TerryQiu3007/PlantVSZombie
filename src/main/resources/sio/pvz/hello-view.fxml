@@ -262,6 +262,16 @@
                         <Image url="@../../images/plantes/wallnut/wallnut.gif" />
                      </image>
                   </ImageView>
+                  <ImageView fitHeight="94.0" fitWidth="70.0" layoutX="28.0" layoutY="205.0">
+                     <image>
+                        <Image url="@../../images/Interface/tondeuse.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="1054.0" layoutY="182.0">
+                     <image>
+                        <Image url="@../../images/Zombies/normal/zombie.gif" />
+                     </image>
+                  </ImageView>
                     </children></AnchorPane>
             </children>
         </StackPane>
