@@ -4,18 +4,18 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 public class Zombie {
-    private ImageView imageView;
+    private final ImageView imageView;
     private int health;
     private double x;
-    private int row;
+    private final int row;
     private boolean alive = true;
     private boolean reachedEnd = false;
 
     public Zombie(int row) {
         this.row = row;
         this.health = 200;
-        this.x = 800; // position initiale à droite
-        this.imageView = new ImageView(new Image("/resources/images/Zombies/normal/zombie.gif"));
+        this.x = 700; // position initiale à droite
+        this.imageView = new ImageView(new Image("Zombies/normal/zombie.gif"));
         this.imageView.setFitWidth(60);
         this.imageView.setFitHeight(60);
         this.imageView.setY(row * 80 + 20);
@@ -41,7 +41,7 @@ public class Zombie {
 
     public void die() {
         this.alive = false;
-        this.imageView.setImage(new Image("/resources/images/Zombies/z_mort.gif"));
+        this.imageView.setImage(new Image("Zombies/z_mort.gif"));
         // ajouter une animation de mort puis supprimer l'image
     }
 

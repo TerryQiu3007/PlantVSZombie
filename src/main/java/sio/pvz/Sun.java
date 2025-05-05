@@ -1,12 +1,8 @@
 package sio.pvz;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-
-import java.util.Random;
 
 public class Sun {
     private int sunCount;
-
+    private static int SUN=25;
 
     public Sun(int sunCount) {
         this.sunCount = sunCount;
@@ -20,8 +16,8 @@ public class Sun {
         this.sunCount = sunCount;
     }
 
-    public void addition(int nb) {
-        this.sunCount = sunCount+nb;
+    public void addition() {
+        this.sunCount += SUN;
     }
 
     public void acheter(int plante) {
@@ -43,6 +39,5 @@ public class Sun {
             }
 
     }
-
 }
 

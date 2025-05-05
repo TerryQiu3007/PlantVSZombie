@@ -3,6 +3,7 @@ package sio.pvz;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Cursor;
+import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -126,6 +127,7 @@ public class HelloController implements Initializable {
         idTerrain.setVisible(false);
         affcadre(false);
         affPlante(false);
+
     }
     @FXML
     public void clickStart(MouseEvent mouseEvent) {
@@ -157,19 +159,24 @@ public class HelloController implements Initializable {
         idlevel1.setVisible(true);
         idMenu.setVisible(false);
         idTerrain.setVisible(false);
+        affcadre(false);
+        affPlante(false);
     }
     public void startGame(int level) {
+        int i;
         s = new Sun(300);
         idSunCount.setText(String.valueOf(s.getSunCount()));
+        ArrayList<Zombie> zombies = new ArrayList<>(50);
         z = new Zombie(3);
-        z.update();
-        p = new Plant("Sunflower",100,true);
+        p = new Plant("Sunflower", 100, true) {
+        };
+
 
     }
 
     @FXML
     public void clickSun(MouseEvent mouseEvent) throws InterruptedException {
-        s.addition(25);
+        s.addition();
         idSunCount.setText(String.valueOf(s.getSunCount()));
     }
 
@@ -261,6 +268,7 @@ public class HelloController implements Initializable {
             affcadre(false);
             s.acheter(1);
             idSunCount.setText(String.valueOf(s.getSunCount()));
+
         }
         if(numero==2){
             peashooter1.setVisible(true);
@@ -269,6 +277,7 @@ public class HelloController implements Initializable {
             affcadre(false);
             s.acheter(2);
             idSunCount.setText(String.valueOf(s.getSunCount()));
+
         }
         if(numero==3){
             wallnut1.setVisible(true);
@@ -457,6 +466,7 @@ public class HelloController implements Initializable {
             affcadre(false);
             s.acheter(1);
             idSunCount.setText(String.valueOf(s.getSunCount()));
+
         }
         if(numero==2){
             peashooter8.setVisible(true);
@@ -503,5 +513,8 @@ public class HelloController implements Initializable {
             idSunCount.setText(String.valueOf(s.getSunCount()));
         }
     }
+
+
+
 }
 

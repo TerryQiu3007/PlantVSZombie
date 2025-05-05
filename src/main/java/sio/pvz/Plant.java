@@ -14,6 +14,9 @@ public class Plant{
         return nom;
     }
 
+    public int getHealth() {
+        return health;
+    }
 
     public boolean isAlive() {
         return alive;
@@ -31,12 +34,6 @@ public class Plant{
         this.alive = alive;
     }
 
-    public void takeDamage(int damage) {
-        health -= damage;
-        if (health <= 0) {
-            alive = false;
-        }
 
-    }
 }
 
